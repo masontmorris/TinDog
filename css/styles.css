@@ -39,6 +39,10 @@ h3 {
   padding: 0 0 4rem;
 }
 
+.navbar-toggle {
+  width: 100px;
+}
+
 .navbar-brand {
   font-family: 'Ubuntu';
   font-size: 2.5rem;
@@ -62,10 +66,20 @@ h3 {
 /* iphone image */
 
 .iphone {
-  position: relative;
+  position: absolute;
   display: block;
-  margin: auto;
-  width: 60%;
+  width: 50%;
+  right: 25%;
+}
+
+@media (max-width: 1296px) {
+  .iphone {
+    position: static;
+    margin: auto;
+  }
+  .container-fluid {
+    text-align: center;
+  }
 }
 
 .carousel-item {
@@ -92,6 +106,10 @@ h3 {
   padding: 2% 2%;
 }
 
+.footer-icon {
+  padding: 1rem .5rem;
+  color: black;
+}
 
 #title {
   background-color: #ff4c68;
@@ -100,6 +118,9 @@ h3 {
 #features {
   text-align: center;
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 #features i {
@@ -125,4 +146,22 @@ h3 {
 
 #pricing {
   text-align: center;
+}
+
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
+}
+
+#cta h3 {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+  color: gray;
 }
